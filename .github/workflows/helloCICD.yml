@@ -53,6 +53,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
          name: build
+      - name: Display structure of downloaded files
+        run: ls -R
 
       - name: publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
