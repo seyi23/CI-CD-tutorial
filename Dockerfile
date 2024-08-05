@@ -1,3 +1,3 @@
 FROM nginx:1.27.0-alpine
 
-COPY ./build/ /usr/share/nginx/html/
+COPY cicd_app/www /usr/share/nginx/html/
