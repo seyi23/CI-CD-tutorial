@@ -54,7 +54,9 @@ jobs:
         with:
          name: build
       - name: Display structure of downloaded files
-        run: ls -R
+        run: |
+          pwd
+          ls -R
 
       - name: publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
